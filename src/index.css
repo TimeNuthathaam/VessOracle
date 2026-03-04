@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: system-ui, -apple-system, "Segoe UI", "Noto Sans Thai", sans-serif;
+  --color-earth-50: #f4f5f2;
+  --color-earth-100: #e6e9e3;
+  --color-earth-200: #ced5c8;
+  --color-earth-300: #b0bba7;
+  --color-earth-400: #93a187;
+  --color-earth-500: #7a8a6b;
+  --color-earth-600: #5f6d52;
+  --color-earth-700: #4a5540;
+  --color-earth-800: #3a4233;
+  --color-earth-900: #31372c;
+}
+
+body {
+  background-color: var(--color-earth-50);
+  color: var(--color-earth-800);
+}
+
+/* Custom bullet styles */
+.bullet-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bullet-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.bullet-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-earth-500);
+  font-size: 1.5rem;
+  line-height: 1;
+  top: -0.1rem;
+}
